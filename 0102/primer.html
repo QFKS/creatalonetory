@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <style>
+        body{
+            background: yellow;
+        }
+        p{
+            color:blue;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- не нумерований -->
+    <ul> 
+        <!-- <li style="color: white;">
+            Itemm 1
+        </li> -->
+        <li>
+            para 2
+        </li>
+        <li>
+            para 1
+        </li>
+        <li>
+            para 2
+        </li>
+    </ul>
+    <!-- нумерований -->
+    <ol type="A">
+        <li>
+            Inner list
+            <ul>
+                <li>
+                    Itemm 1
+                </li>
+                lorem
+        
+                    Itemm 2
+                    
+                </li>
+            </ul>
+        </li>
+        <li>
+            Itemm 2
+        </li>
+        <li>
+            Itemm 1
+        </li>
+        <li>
+            Itemm 2
+        </li>
+    </ol>
+    <ol start="6">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <div>
+        <h3>Title</h3>
+        <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi adipisci quibusdam ratione et ut nihil, libero quaerat nostrum perferendis accusamus. Quidem consequuntur maiores, libero consequatur quaerat dolores quis tempore ex.
+        </p>
+        <a href="">Show me now</a>
+    </div>
+    <div>
+        <h3>Title</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, nulla?
+        </p>
+        <a href="">Shop you now</a>
+    </div>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Shop</a>
+        </nav>
+    </header>
+    <main>
+        <!-- головний контент -->
+        <aside>
+            <!-- Бокова панель на сайті -->
+        </aside>
+    </main>
+    <section>
+        <!-- секція контенту -->
+    </section>
+    <section>
+        
+    </section>
+    <footer>
+        <!-- футер -->
+        <nav>
+            <!-- навігація -->
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Shop</a>
+        </nav>
+    </footer>
+    <hr>
+    <table border="4" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>
+                    Імя
+                </th>
+                <th>
+                    Прізвище
+                </th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Max
+                </td>
+                <td>
+                    Secondname
+                </td>
+            </tr>
+            <tr>
+                <td>Max 2</td>
+                <td>Sname 2</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- <table>
+        <tr>
+            <th>
+                Name
+            </th>
+            <td>
+                Max
+            </td>
+            <td>
+                Max2
+            </td>
+        </tr>
+    </table> -->
+    <table border="4">
+        <tr>
+            <th colspan="2">Company / Location</th>
+            <th>
+                Phone
+            </th>
+        </tr>
+        <tr>
+            <td>Dnipro oil</td>
+            <td rowspan="2">Dnipro</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>Dnipro food</td>
+            <td>5435345</td>
+        </tr>
+    </table>
+    <hr>
+    <form action="">
+        <div>
+            <label for="name">
+                Name
+            </label>
+            <input type="text" id="name">            
+        </div>
+        <div>
+            <!-- ctrl +d multi select -->
+            <label for="password">
+                Password
+            </label>
+            <input placeholder="Type your password" type="password" id="password">            
+        </div>
+        <div>
+            <!-- ctrl +d multi select -->
+            <label for="confirm_password">
+                Confirm password
+            </label>
+            <input disabled type="password" id="confirm_password">            
+        </div>
+        <br>
+        <div>
+            <select name="" id="">
+                <option disabled value="01">Html</option>
+                <option selected value="02">CSS</option>
+                <option value="03">JS</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="text-user">
+                text-user
+            </label>
+            <textarea placeholder="Type your text" name="" id="text-user"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="checkbox1">
+                Checkbox 
+            </label>
+            <input id="checkbox1" type="checkbox">
+        </div>
+        <div>
+            <label for="checkbox2">
+                Checkbox 2
+            </label>
+            <input disabled id="checkbox2" type="checkbox">
+        </div>
+        <div>
+            <label for="checkbox3">
+                Checkbox 3
+            </label>
+            <input id="checkbox3" type="checkbox">
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            Female
+            <input type="radio" name="gender" value="Female">
+            Female2
+            <input type="radio" name="gender" value="Female2">
+        </div>
+        <!-- <div>
+            Female
+            <input type="radio" name="gender" value="Female">
+        </div> -->
+        <input type="reset">
+        <button>
+            Send
+        </button>
+    </form>
+    <div>
+        <button>
+            Button
+        </button>
+        <a href="#"></a>
+    </div>
+    <div>
+        <img src="..\img\zdn_vRQP56c.jpg" alt="smile icon">
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/236x/8d/47/5c/8d475cd4b9a93cc739f57f9a4cf45bfb.jpg">
+    </div>
+    <div>
+        <!-- <picture>
+			<source media="(min-width: 800px)"
+				srcset="https://i.ytimg.com/vi/1Ne1hqOXKKI/maxresdefault.jpg">
+			<source media="(min-width: 550px)"
+				srcset="https://figopetinsurance.com/sites/default/files/styles/blog_detail/public/imagedogsdog-happiness-selfie-smileblog.jpg?itok=7qhkZkPZ">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/Fuji_dash_dress_1X._SY304_CB626369146_.jpg"
+				alt="GFG">            
+        </picture> -->
+
+
+        <picture>
+			<source media="(max-width:900px)"
+				srcset="https://i.pinimg.com/236x/66/a1/61/66a1611d25db5a81b1f454437601aa42.jpg">
+
+			<source media="(max-width:1200px)"
+				srcset="https://i.pinimg.com/236x/b0/13/7a/b0137a6a71769fa1b43c6d4b2998e60b.jpg"
+				alt="GFG">    
+            <img src="../img/" alt="Flowers" style="width:auto;">
+          </picture>
+    </div>
+    <div>
+        <audio controls>
+            <source src="..\mp3\18. E-Mantra - Metempsychosis.mp3">
+        </audio>
+    </div>
+    <div>
+        <video width="820" height="640" controls>
+            <source src="..\mp4\video1.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>
