@@ -1,0 +1,120 @@
+body{
+    background: rgba(238, 196, 196, 0.589);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.header{
+    width: 1440px;
+    height: 2101px;
+    background: rgb(249, 249, 249);
+    margin: auto;
+}
+.container{
+    width: 1000px;
+    list-style: none;
+    padding: 18px;
+    font-size: 24px;
+    margin: 0 auto;
+}
+.nav{
+    display: block;
+    float: right; 
+}
+main{
+    background: #FAC960;
+    height: 421px;
+}
+h1{
+    width: 679px;
+    color: #8A6D2F;
+    text-align: center;
+    font-size: 34px;
+    line-height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal;
+    font-size:40px;
+    padding: 70px;
+}
+input {
+    width: 560px;
+    font-weight: 400px;
+    font-size: 30px;
+    line-height: 54px;   
+}
+button{
+    width: 240px;
+    line-height: 54px;
+    justify-content: center;
+}
+form{
+    justify-content: center;
+    left: 320px;
+    color: #afafaf;
+    display: flex;
+}
+input,button{
+    align-items: center;
+}   
+button{
+    background: #A8863D;
+    border-radius: 0px 2px 2px 0px;
+    font-size:30px;
+    color: #FFF;
+}
+.container2{
+    background: #F2F2F2;
+    height: 438px;
+    margin:0px;
+    text-align: center;
+    font-size: 34px;
+    line-height: 44px;
+    padding: 100px;
+    font-weight: normal;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.container3{
+    background: #Ffff;
+    height: 500px;
+    margin:0px;
+    text-align: center;
+    font-size: 34px;
+    line-height: 44px;
+    padding: 100px;
+    font-weight: normal;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.container4{
+    background: #FAC960;
+    height: 313px;
+    margin:0px;
+    text-align: center;
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: normal;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 100px;
+}
+#last_butt{
+    background: #FFFFFF;
+    border: 1px solid #758696;
+    width: 60px;
+    height: 22px;
+    border-radius:3px;
+}
+footer{
+    background: #fff;
+    height:240px;
+}
+.container5{
+    background: #fff;
+    height:240px;
+    padding: 100px;
+    font-size: 23px;
+    text-align: center;
+    font-weight:18px;
+}
+      
