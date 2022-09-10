@@ -1,0 +1,350 @@
+*{
+    box-sizing: border-box;
+}
+$sans-font-family: 'Work Sans', sans-serif;
+$roboto-font-family: 'Roboto', sans-serif;
+$inter-font-family: 'Inter', sans-serif;
+$poppins-font-family: 'Poppins', sans-serif;
+$main-color: rgba(255, 183, 66, 1);
+$secondary-color: rgba(255, 255, 255, 0.08);
+$hover-color: rgba(255, 183, 66, 0.5);
+body {
+    background-color: rgba(33, 37, 41, 1);
+}
+.idesign {
+    justify-content: center;
+    display: flex;
+    font-family: "Inter",sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+
+}
+nav {
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    a:hover {
+        color: $main-color;
+    }
+    display: grid;
+    ul {
+        justify-content: center;
+        color: white;
+        display: inline-flex;
+        gap: 5%;
+        li{
+            font-family: $poppins-font-family;
+            font-size: 18px;
+            font-weight: 600;
+    
+        }
+
+    }
+}
+.margin {
+    margin: 50px 0;
+}
+.h:hover {
+    color: black;
+    background-color: $main-color;
+    padding: 15px;
+}
+.hire {
+        border: none;
+        border-radius: 25px;
+        height: 54px;
+        width: 150px;
+        font-size: 18px;
+        font-family: $poppins-font-family;
+        font-weight: 700;
+        background-color: $main-color;
+        color: black;
+    
+}
+h1 {
+    color: white;
+    font-family: $inter-font-family;
+    font-size: 48px;
+    font-weight: 700;
+    justify-content: center;
+    display: flex;
+}
+section {
+    padding-top: 100px;
+    .avatar{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .div_emblem {
+        .emblem {
+            border: 10px solid white;
+            border-radius: 28px;
+            background-color:white;
+            
+        }
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-column-gap: 5%;
+        .group {
+            span {
+                font-weight: 700;
+                font-size: 18px;
+                font-family: $inter-font-family;
+                color: white;
+            }
+            text-align: center;
+            align-items: center;
+            display:grid;
+            grid-template-columns: auto auto auto;
+            border-radius: 20px;
+            padding: 40px 0px;
+            background-color:rgba(41, 43, 46, 1);
+        }
+        .group:hover {
+            background:linear-gradient(94.3deg, #FFB742 0%, rgba(255, 123, 66, 0.76) 99.33%);
+            span {
+             colour:black;
+            }
+            h4 {
+                colour: black;
+            }
+        }
+    }
+}
+h4 {
+    margin: 0;
+    color: $main-color;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: $inter-font-family;
+}
+h3 {
+    font-family: $inter-font-family;
+    font-weight: 700;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    span {
+        margin-left: 10px;
+        text-decoration: underline;
+        color: #ffb742;
+        justify-content: center;
+        display: flex;
+        font-family: "Inter",sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+    }
+}
+.clm2 {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    h1 {
+        justify-content: flex-start;
+    }
+}
+.me_btn {
+    justify-content: center;
+    display: flex;
+    text-transform: uppercase;
+    font-family: $poppins-font-family;
+    font-size: 20px;
+    font-weight: 600;
+    width:160px;
+    height: 42px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    border: none;
+    color: $main-color;
+}
+p {
+    font-family: $poppins-font-family;
+    font-size: 16px;
+    font-family: 400;
+    color: white;
+    width: 90%;
+    margin: 50px 0;
+}
+.clm_2 {
+    @extend .clm2;
+    grid-column-gap: 4%;
+    grid-template-columns: auto auto;
+}
+.icons {
+    gap: 3%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 80px;
+    .bg {
+        background-color: $secondary-color;
+        padding: 10px;
+    }
+    .figma {
+        padding: 10px 20px;
+    }
+    .sass {
+        padding: 16px 10px;
+    }
+    .bg:hover {
+        background-color: rgba(255, 183, 66, 0.5);
+    }
+}
+.center {
+    margin-top: 200px;
+    display: grid;
+    justify-content: center;
+}
+.clm3 {
+    .column_start {
+        grid-column-start: 2;
+    }
+    .grid {
+        grid-row-start: 3;
+    }
+    .grid1{
+        grid-row-start: -2;
+        grid-column-end: -1;
+    }
+    gap: 2%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 300px 200px 200px;
+}
+.clm4 {
+    gap: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    .flex {
+        width: 80%;
+        border-radius: 20px;
+        padding: 50px 20px;
+        background-color: white;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        p {
+            
+            font-size: 20px;
+            color: black;
+        }
+        .img {
+            gap: 10%;
+            display: grid;
+            grid-template-columns: 2% auto;
+        }
+        .ksushi {
+            align-self: center;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: $poppins-font-family;
+            margin: 0 50px;
+        }
+        .designer {
+            font-family: $poppins-font-family;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    .star {
+        display: flex;
+        gap: 3%;
+    }
+
+}
+.start_now{
+    left: 400px;
+    bottom: 257px;
+    position: absolute;
+    width: 1000px;
+    align-items: center;
+    gap: 10%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: $main-color;
+    padding: 0 50px;
+    h5 {
+        font-family: $inter-font-family;
+        font-weight: 900;
+        font-size: 35px;
+    }
+    .do_this{
+        border: 1px solid black;
+        background-color: none;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 18px;
+        font-family: $roboto-font-family;
+        font-weight: 500;
+    }
+    .work {
+        font-family: $roboto-font-family;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+h6 {
+    color: $main-color;
+    font-family: $poppins-font-family;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+footer {
+    position: relative;
+
+    ul {
+        margin: 0;
+    }
+    li {
+        width: 60%;
+        margin: 10px;
+        display: flex;
+        font-size: 18px;
+        font-family: $sans-font-family;
+        font-weight: 500;
+        color: rgba(123, 123, 123, 1);
+        
+    }
+    li:first-child{
+        margin-bottom: 40px;
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+    }
+    a {
+        text-decoration: none;
+        color: rgba(123, 123, 123, 1);
+        margin: 0;
+        padding: 0;
+    }
+    .clm {
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .creative {
+        font-family: $sans-font-family;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+    }
+    background-color: rgba(28, 28, 28, 1);
+}
