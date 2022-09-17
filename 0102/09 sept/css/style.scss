@@ -1,0 +1,119 @@
+$main-color:#333;
+$section-bg-color:yellow;
+:root{
+    --main-section:#{$section-bg-color};
+}
+header{
+    background-color: rgb(27, 220, 165);
+    padding: 40px;
+}
+nav{
+    padding: 10px;
+    ul{
+        margin: 0;
+        padding: 0;
+        li>a{
+            text-decoration: none;
+        }   
+        li .icon{
+            padding: 10px;
+        }
+    }
+}
+.main-section{
+    padding: 100px;
+    background-color: $section-bg-color;
+    position: relative;
+    &-title{
+        color:$main-color;
+        margin: 0;
+        font-size: 20px;
+    }
+    &-text{
+        color:red;
+        font-size: 30px;
+    }
+    &:hover{
+        background-color: orangered;
+        &::before{
+            content: "!!!!!!!!";
+            font-size: 30px;
+            color: $main-color;
+        }
+    }
+    &::before{
+        content: "!!!!!!!!";
+        font-size: 30px;
+    }
+}
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul{
+    @include reset-list;
+    background-color: #333;
+}
+footer ul{
+    background-color: red;
+    @include reset-list;
+}
+@mixin avatar($size, $radius:0) {
+    width: $size;
+    height: $size;
+    @if $radius != 0 {
+        border-radius: $radius;
+    }
+}
+
+.avatar1{
+    @include avatar(100px, $radius:10px);
+}
+.avatar2{
+    @include avatar(200px, 0);
+}
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}  
+}
+input {
+    @include placeholder {
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+        font-size: 10px;
+    }
+}
+.block{
+    padding: 10px;
+    border:2px solid red;
+}
+.block2{
+    padding: 20px;
+    border:2px solid red;
+}
+.new-block{
+    @extend .block ;
+    @extend .block2;
+    background-color: gray;
+}
+.new-block1{
+    @extend .block;
+    background-color: green;
+}
+.new-block2{
+    @extend .block;
+    background-color: gold;
+}
+$colorFunction:rgb(44, 14, 192);
+.color{
+    color: $colorFunction;
+    font-size: 30px;
+    &:hover{
+        // color: darken($colorFunction, 50%);
+        // color: lighten($colorFunction, 50%);
+        color: desaturate($colorFunction, 90%);
+    }
+}

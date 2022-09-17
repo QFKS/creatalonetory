@@ -43,6 +43,7 @@ nav {
         color: white;
         display: inline-flex;
         gap: 5%;
+        margin-block:20px;
         li{
             font-family: $poppins-font-family;
             font-size: 18px;
@@ -58,19 +59,37 @@ nav {
 .h:hover {
     color: black;
     background-color: $main-color;
-    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px 20px;
+    gap: 10px;
+    cursor: pointer;    
 }
 .hire {
         border: none;
         border-radius: 25px;
         height: 54px;
-        width: 150px;
+        width: 121px;
         font-size: 18px;
         font-family: $poppins-font-family;
         font-weight: 700;
         background-color: $main-color;
         color: black;
-    
+        margin-block:7px;
+}
+.hire:hover {
+        border: none;
+        border-radius: 25px;
+        height: 54px;
+        width: 121px;
+        font-size: 20px;
+        font-family: $poppins-font-family;
+        font-weight: 700;
+        background-color: $main-color;
+        color: #fafafa;
+        cursor: pointer;
+        margin-block:7px;
 }
 h1 {
     color: white;
@@ -90,7 +109,7 @@ section {
     .div_emblem {
         .emblem {
             border: 10px solid white;
-            border-radius: 28px;
+            border-radius: 26px;
             background-color:white;
             
         }
@@ -116,10 +135,10 @@ section {
         .group:hover {
             background:linear-gradient(94.3deg, #FFB742 0%, rgba(255, 123, 66, 0.76) 99.33%);
             span {
-             colour:black;
+             color:black;
             }
             h4 {
-                colour: black;
+                color: black;
             }
         }
     }
@@ -161,10 +180,11 @@ h3 {
     justify-content: center;
     display: flex;
     text-transform: uppercase;
-    font-family: $poppins-font-family;
+    font-family: "Poppins";
+    font-style: normal;
     font-size: 20px;
     font-weight: 600;
-    width:160px;
+    width:192px;
     height: 42px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.08);
@@ -179,6 +199,8 @@ p {
     color: white;
     width: 90%;
     margin: 50px 0;
+    line-height: 30px;
+    
 }
 .clm_2 {
     @extend .clm2;
@@ -186,13 +208,15 @@ p {
     grid-template-columns: auto auto;
 }
 .icons {
-    gap: 3%;
+    gap: 2%;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-template-rows: 80px;
+    border-radius: 15px;
     .bg {
         background-color: $secondary-color;
         padding: 10px;
+        border-radius: 15px;
     }
     .figma {
         padding: 10px 20px;
@@ -200,8 +224,12 @@ p {
     .sass {
         padding: 16px 10px;
     }
+    .xd {
+        padding: 11px 10px;
+    }
     .bg:hover {
         background-color: rgba(255, 183, 66, 0.5);
+        cursor: pointer;
     }
 }
 .center {
@@ -231,12 +259,9 @@ p {
     display: grid;
     grid-template-columns: auto auto auto;
     .flex {
-        width: 80%;
         border-radius: 20px;
         padding: 50px 20px;
         background-color: white;
-        display: grid;
-        grid-template-rows: auto auto auto;
         p {
             
             font-size: 20px;
@@ -267,16 +292,15 @@ p {
 
 }
 .start_now{
-    left: 400px;
-    bottom: 257px;
-    position: absolute;
+    bottom: 64px;
+    position: relative;
     width: 1000px;
     align-items: center;
     gap: 10%;
     border-radius: 10px;
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: $main-color;
+    background-color: #ffb742;
     padding: 0 50px;
     h5 {
         font-family: $inter-font-family;
@@ -285,12 +309,22 @@ p {
     }
     .do_this{
         border: 1px solid black;
-        background-color: none;
+        background: none;
         border-radius: 20px;
         padding: 10px;
         font-size: 18px;
         font-family: $roboto-font-family;
         font-weight: 500;
+    }
+    .do_this:hover{
+        border: 2px solid #1800cb;
+        background: #e5ff00;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 18px
+        $roboto-font-family;
+        font-weight: 500;cursor: pointer;
+        color: #1800cb;
     }
     .work {
         font-family: $roboto-font-family;
