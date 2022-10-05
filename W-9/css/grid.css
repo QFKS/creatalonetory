@@ -1,0 +1,69 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(50px, 1fr));
+    grid-column-gap:10px;
+    grid-row-gap:20px;
+}
+
+.grid div:nth-child(1){
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:4;
+}
+header{
+    grid-template-columns: auto;
+}
+
+.grid div:nth-child(2){
+    grid-column-start: -2;
+    grid-column-end: -3;
+    grid-row-start: -1;
+    grid-row-end: -2;
+}
+.grid div:nth-child(3){
+    justify-self: center;
+    align-self: center;
+}
+.grid.area{
+    grid-template-columns: repeat(5,auto);
+     grid-template-areas:
+    "header header"
+    "content content"
+    "lef-side right-side"
+    "footer footer"; 
+
+    grid-template-areas:
+    "nav header "
+    "nav content"
+    "nav content"
+    "footer footer"; 
+    grid-template-areas:
+    "nav header  header"
+    "nav . content"
+    "nav . content"
+    "footer footer footer";
+    justify-items: center;
+    align-items: center; 
+    position: relative;
+}
+.grid.area div:nth-child(1){
+    grid-area: header;
+}
+.grid.area div:nth-child(2){
+    grid-area: nav;
+     position: absolute;
+    grid-column: 2/3;
+    grid-row 
+
+}
+.grid.area div:nth-child(3){
+    grid-area: content;
+}
+/* .grid.area div:nth-child(4){
+    grid-area: right-side;
+} */
+.grid.area div:nth-child(4){
+    grid-area: footer;
+}
